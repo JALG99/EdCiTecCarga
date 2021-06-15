@@ -1,0 +1,2478 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/25/2021 12:13:36 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-30721VS"
+  DTS:CreatorName="DESKTOP-30721VS\Jorge"
+  DTS:DTSID="{71411274-A154-444B-B3F4-9F036C85A2E0}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.157"
+  DTS:LocaleID="22538"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="85"
+  DTS:VersionGUID="{D7D6D8FF-DE6F-4681-9FE5-779B58ED1A6D}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[AsesorCSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{437772E9-50E6-43A7-949C-2AC3859882BB}"
+      DTS:ObjectName="AsesorCSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="22538"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\EdCiTec\Carga de datos\CSV Files\Asesor.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="your-firstName"
+              DTS:DTSID="{31196095-75CF-42ED-AAE5-CB17A58DAABF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="your-email"
+              DTS:DTSID="{D253B25E-340A-46EB-BF07-EF0E72B395B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="submit_ip"
+              DTS:DTSID="{72FB0E83-DF4B-478F-B440-0B430D84B32C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="submit_time"
+              DTS:DTSID="{6FAB40D3-5059-4E71-9C89-4877CB398B8C}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[InvestigadorCSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{574A556C-41B0-4661-BB14-5519D1E8AECD}"
+      DTS:ObjectName="InvestigadorCSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="22538"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\EdCiTec\Carga de datos\CSV Files\Investigador.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="29"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="﻿your-firstName"
+              DTS:DTSID="{B741E5E9-2654-40F9-A610-C174A40F7929}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="29"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="your-lastName"
+              DTS:DTSID="{EAEA8FC8-5C35-4F52-86D0-30772772EB1D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="your-email"
+              DTS:DTSID="{C2FA39C4-C198-42FC-8BDE-194B4518C990}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="your-celular"
+              DTS:DTSID="{A694118C-E0E8-476F-A0DA-6BA31F2439AB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="submit_ip"
+              DTS:DTSID="{2736513B-A378-4644-87E5-9D581DFC4DE8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="submit_time;;;;;;;; "
+              DTS:DTSID="{215D1A34-5B9D-4A78-96D6-86FBC17BCA7E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[NewAsesorCSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4223D6FB-4B19-482F-95A4-93EA21565401}"
+      DTS:ObjectName="NewAsesorCSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="22538"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\EdCiTec\Carga de datos\CSV for Notion\Asesor.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="correo"
+              DTS:DTSID="{EA07A33A-95CE-4E1B-A319-50C302F4BE6A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fechaRegistro"
+              DTS:DTSID="{3032ABAE-8FA9-4EC8-BC45-FD6CD62E9A72}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="nombre"
+              DTS:DTSID="{63316923-DEDF-45B2-A8CC-24106FEF035C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="code"
+              DTS:DTSID="{131FEC45-7E90-49E8-8207-D90F52E74749}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[NewInvestigadorCSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{DC20826C-3430-4A24-A5A6-762C1C80E532}"
+      DTS:ObjectName="NewInvestigadorCSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="22538"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\EdCiTec\Carga de datos\CSV for Notion\Investigador.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="correo"
+              DTS:DTSID="{CE0E2181-E4E1-4FCC-86A5-8CE715FA3A46}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="celular"
+              DTS:DTSID="{36557E25-30B9-4BF0-A083-BC659BB29AFF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fechaRegistro"
+              DTS:DTSID="{83547A7B-5831-45DE-9AD5-7FCB0DD8D44C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="nombre"
+              DTS:DTSID="{4784EA4E-A863-4BCB-ACCE-0DD5AAC96AD2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="code"
+              DTS:DTSID="{F31BD0A7-2D2D-4DB1-B404-3F92705D885A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[NewTutorCSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D6314C7B-8C57-4790-A451-D22248A95CB0}"
+      DTS:ObjectName="NewTutorCSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="22538"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\EdCiTec\Carga de datos\CSV for Notion\Tutor.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="correo"
+              DTS:DTSID="{A18065BC-ABA5-408B-91C5-02CDC2806566}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fechaRegistro"
+              DTS:DTSID="{1BD77FB3-F354-40A5-BB11-96D44AAA92A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="nombre"
+              DTS:DTSID="{FD75BC98-C6EB-42A8-A710-CC7B06B6E58C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="9"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="code"
+              DTS:DTSID="{35FE072D-DF5E-48FE-BD2C-D23B965832B2}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[NewVoluntarioCSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{544C5E66-D4AE-402D-9FD9-E50E68A509D7}"
+      DTS:ObjectName="NewVoluntarioCSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="22538"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\EdCiTec\Carga de datos\CSV for Notion\Voluntario.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="correo"
+              DTS:DTSID="{079BBDA8-DC3D-4168-A8B9-E11A3B69ED37}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fechaRegistro"
+              DTS:DTSID="{AB3D2A44-448D-4369-80AB-930DE7829904}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="nombre"
+              DTS:DTSID="{8A152878-3ED7-4EF9-8BEB-7902F97C4FF0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="sobreMi"
+              DTS:DTSID="{B32E5741-AD3F-4975-AB03-DE06DECDF579}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cv"
+              DTS:DTSID="{4C97BCFD-D720-45D8-9CF1-A6BF5C6A0FD9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="submit_ip"
+              DTS:DTSID="{25180EF2-276F-4C07-85EC-B911684D5780}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="code"
+              DTS:DTSID="{50B85AE2-EA06-42ED-89EC-A5B8FDE3F24B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TutorCSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{702192AA-66F3-4D3C-8304-0205D527C5C7}"
+      DTS:ObjectName="TutorCSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="22538"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\EdCiTec\Carga de datos\CSV Files\Tutor.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="your-firstName"
+              DTS:DTSID="{67FD5317-C1F8-4F57-AED9-0BC43733B633}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="your-email"
+              DTS:DTSID="{7B90EFA3-0988-4F48-8E17-6B21D9824EE2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="submit_ip"
+              DTS:DTSID="{996CC039-DC30-4B01-B05E-F15D3C2F1ABF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="submit_time"
+              DTS:DTSID="{68B086FF-EA01-4E68-A6F1-448C71D5BC26}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[VoluntarioCSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{EC16675D-053B-4CEE-8507-47E93AA3A862}"
+      DTS:ObjectName="VoluntarioCSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="22538"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\EdCiTec\Carga de datos\CSV Files\Voluntario.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="your-name"
+              DTS:DTSID="{77380CF1-92B7-47BF-8995-49B364ABA880}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="your-email"
+              DTS:DTSID="{7056C9E5-C496-49D2-A964-C4D3EF18ADCF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="about"
+              DTS:DTSID="{4C65EBE7-3B1D-4130-BD52-846D504ABDE5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cv"
+              DTS:DTSID="{E50C8C1A-76C6-4639-9A86-6AB53E34C8E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="submit_ip"
+              DTS:DTSID="{A965743A-EF60-47F0-8FFA-8DA6179E4619}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="submit_time"
+              DTS:DTSID="{9A0C67B3-A53C-471E-8119-DC980DC9F597}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\CSV ASESOR"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{61d4dccc-18c4-47af-a7cb-fd55529014d7}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CSV ASESOR"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\CSV ASESOR\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\CSV ASESOR\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CSV ASESOR\Derived Column 1.Inputs[Derived Column Input].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="nombre"
+                      lineageId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CSV ASESOR\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\CSV ASESOR\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV ASESOR\Derived Column 1.Outputs[Derived Column Output].Columns[code]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="9"
+                      lineageId="Package\CSV ASESOR\Derived Column 1.Outputs[Derived Column Output].Columns[code]"
+                      name="code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[UPPER]([SUBSTRING](#{Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]},1,2)) + "-" + [RIGHT]("0" + (DT_STR,2,65001)[DATEPART]("dd",[GETDATE]()),2) + [RIGHT]("0" + (DT_STR,2,65001)[DATEPART]("mm",[GETDATE]()),2) + [RIGHT]((DT_STR,4,65001)[DATEPART]("yy",[GETDATE]()),2)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">UPPER(SUBSTRING(nombre,1,2)) + "-" + RIGHT("0" + (DT_STR,2,65001)DATEPART("dd",GETDATE()),2) + RIGHT("0" + (DT_STR,2,65001)DATEPART("mm",GETDATE()),2) + RIGHT((DT_STR,4,65001)DATEPART("yy",GETDATE()),2)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CSV ASESOR\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\CSV ASESOR\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV ASESOR\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CSV ASESOR\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CSV ASESOR\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CSV ASESOR\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CSV ASESOR\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="22538"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CSV ASESOR\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[NewAsesorCSV]"
+                  connectionManagerRefId="Package.ConnectionManagers[NewAsesorCSV]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CSV ASESOR\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CSV ASESOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[correo]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="correo"
+                      externalMetadataColumnId="Package\CSV ASESOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[correo]"
+                      lineageId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].Columns[correo]" />
+                    <inputColumn
+                      refId="Package\CSV ASESOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[fechaRegistro]"
+                      cachedDataType="dbDate"
+                      cachedName="fechaRegistro"
+                      externalMetadataColumnId="Package\CSV ASESOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[fechaRegistro]"
+                      lineageId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].Columns[fechaRegistro]" />
+                    <inputColumn
+                      refId="Package\CSV ASESOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="nombre"
+                      externalMetadataColumnId="Package\CSV ASESOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[nombre]"
+                      lineageId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]" />
+                    <inputColumn
+                      refId="Package\CSV ASESOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[code]"
+                      cachedDataType="wstr"
+                      cachedLength="9"
+                      cachedName="code"
+                      externalMetadataColumnId="Package\CSV ASESOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[code]"
+                      lineageId="Package\CSV ASESOR\Derived Column 1.Outputs[Derived Column Output].Columns[code]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CSV ASESOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[code]"
+                      dataType="wstr"
+                      length="10"
+                      name="code" />
+                    <externalMetadataColumn
+                      refId="Package\CSV ASESOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[nombre]"
+                      dataType="wstr"
+                      length="60"
+                      name="nombre" />
+                    <externalMetadataColumn
+                      refId="Package\CSV ASESOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[correo]"
+                      dataType="wstr"
+                      length="30"
+                      name="correo" />
+                    <externalMetadataColumn
+                      refId="Package\CSV ASESOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[fechaRegistro]"
+                      dataType="dbDate"
+                      name="fechaRegistro" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\CSV ASESOR\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="22538"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CSV ASESOR\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[AsesorCSV]"
+                  connectionManagerRefId="Package.ConnectionManagers[AsesorCSV]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].Columns[correo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-email]"
+                      length="50"
+                      lineageId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].Columns[correo]"
+                      name="correo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].Columns[ip]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_ip]"
+                      length="50"
+                      lineageId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].Columns[ip]"
+                      name="ip"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].Columns[fechaRegistro]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_time]"
+                      lineageId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].Columns[fechaRegistro]"
+                      name="fechaRegistro"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-firstName]"
+                      length="50"
+                      lineageId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]"
+                      name="nombre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-firstName]"
+                      dataType="wstr"
+                      length="50"
+                      name="your-firstName" />
+                    <externalMetadataColumn
+                      refId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-email]"
+                      dataType="wstr"
+                      length="50"
+                      name="your-email" />
+                    <externalMetadataColumn
+                      refId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_ip]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="submit_ip" />
+                    <externalMetadataColumn
+                      refId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_time]"
+                      dataType="dbDate"
+                      name="submit_time" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\CSV ASESOR.Paths[Derived Column Output]"
+              endId="Package\CSV ASESOR\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Derived Column Output"
+              startId="Package\CSV ASESOR\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\CSV ASESOR.Paths[Flat File Source Output]"
+              endId="Package\CSV ASESOR\Derived Column 1.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\CSV ASESOR\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\CSV INVESTIGADOR"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{a1e82221-240c-4a84-9e7a-8ad8bd914bcb}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CSV INVESTIGADOR"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\CSV INVESTIGADOR\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\CSV INVESTIGADOR\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CSV INVESTIGADOR\Derived Column 1.Inputs[Derived Column Input].Columns[your-lastName]"
+                      cachedDataType="wstr"
+                      cachedLength="29"
+                      cachedName="your-lastName"
+                      lineageId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[your-lastName]" />
+                    <inputColumn
+                      refId="Package\CSV INVESTIGADOR\Derived Column 1.Inputs[Derived Column Input].Columns[﻿your-firstName]"
+                      cachedDataType="wstr"
+                      cachedLength="29"
+                      cachedName="﻿your-firstName"
+                      lineageId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[﻿your-firstName]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CSV INVESTIGADOR\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\CSV INVESTIGADOR\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV INVESTIGADOR\Derived Column 1.Outputs[Derived Column Output].Columns[nombre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="59"
+                      lineageId="Package\CSV INVESTIGADOR\Derived Column 1.Outputs[Derived Column Output].Columns[nombre]"
+                      name="nombre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(#{Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[﻿your-firstName]} + " " + #{Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[your-lastName]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">([﻿your-firstName] + " " + [your-lastName])</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV INVESTIGADOR\Derived Column 1.Outputs[Derived Column Output].Columns[code]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="9"
+                      lineageId="Package\CSV INVESTIGADOR\Derived Column 1.Outputs[Derived Column Output].Columns[code]"
+                      name="code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[UPPER]([SUBSTRING](#{Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[﻿your-firstName]},1,2)) + "-" + [RIGHT]("0" + (DT_STR,2,65001)[DATEPART]("dd",[GETDATE]()),2) + [RIGHT]("0" + (DT_STR,2,65001)[DATEPART]("mm",[GETDATE]()),2) + [RIGHT]((DT_STR,4,65001)[DATEPART]("yy",[GETDATE]()),2)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">UPPER(SUBSTRING([﻿your-firstName],1,2)) + "-" + RIGHT("0" + (DT_STR,2,65001)DATEPART("dd",GETDATE()),2) + RIGHT("0" + (DT_STR,2,65001)DATEPART("mm",GETDATE()),2) + RIGHT((DT_STR,4,65001)DATEPART("yy",GETDATE()),2)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CSV INVESTIGADOR\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\CSV INVESTIGADOR\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV INVESTIGADOR\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CSV INVESTIGADOR\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CSV INVESTIGADOR\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CSV INVESTIGADOR\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CSV INVESTIGADOR\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="22538"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CSV INVESTIGADOR\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[NewInvestigadorCSV]"
+                  connectionManagerRefId="Package.ConnectionManagers[NewInvestigadorCSV]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="59"
+                      cachedName="nombre"
+                      externalMetadataColumnId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[nombre]"
+                      lineageId="Package\CSV INVESTIGADOR\Derived Column 1.Outputs[Derived Column Output].Columns[nombre]" />
+                    <inputColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[correo]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="correo"
+                      externalMetadataColumnId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[correo]"
+                      lineageId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[correo]" />
+                    <inputColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[code]"
+                      cachedDataType="wstr"
+                      cachedLength="9"
+                      cachedName="code"
+                      externalMetadataColumnId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[code]"
+                      lineageId="Package\CSV INVESTIGADOR\Derived Column 1.Outputs[Derived Column Output].Columns[code]" />
+                    <inputColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[fechaRegistro]"
+                      cachedDataType="dbDate"
+                      cachedName="fechaRegistro"
+                      externalMetadataColumnId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[fechaRegistro]"
+                      lineageId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[fechaRegistro]" />
+                    <inputColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[celular]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="celular"
+                      externalMetadataColumnId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[celular]"
+                      lineageId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[celular]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[nombre]"
+                      dataType="wstr"
+                      length="60"
+                      name="nombre" />
+                    <externalMetadataColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[correo]"
+                      dataType="wstr"
+                      length="50"
+                      name="correo" />
+                    <externalMetadataColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[code]"
+                      dataType="wstr"
+                      length="10"
+                      name="code" />
+                    <externalMetadataColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[fechaRegistro]"
+                      dataType="dbDate"
+                      name="fechaRegistro" />
+                    <externalMetadataColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[celular]"
+                      codePage="65001"
+                      dataType="str"
+                      length="20"
+                      name="celular" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\CSV INVESTIGADOR\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="22538"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CSV INVESTIGADOR\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[InvestigadorCSV]"
+                  connectionManagerRefId="Package.ConnectionManagers[InvestigadorCSV]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[correo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-email]"
+                      length="50"
+                      lineageId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[correo]"
+                      name="correo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[ip]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_ip]"
+                      length="50"
+                      lineageId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[ip]"
+                      name="ip"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[your-lastName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-lastName]"
+                      length="29"
+                      lineageId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[your-lastName]"
+                      name="your-lastName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[celular]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-celular]"
+                      length="20"
+                      lineageId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[celular]"
+                      name="celular"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[fechaRegistro]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_time;;;;;;;; ]"
+                      lineageId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[fechaRegistro]"
+                      name="fechaRegistro"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[﻿your-firstName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[﻿your-firstName]"
+                      length="29"
+                      lineageId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].Columns[﻿your-firstName]"
+                      name="﻿your-firstName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[﻿your-firstName]"
+                      dataType="wstr"
+                      length="29"
+                      name="﻿your-firstName" />
+                    <externalMetadataColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-email]"
+                      dataType="wstr"
+                      length="50"
+                      name="your-email" />
+                    <externalMetadataColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_ip]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="submit_ip" />
+                    <externalMetadataColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-lastName]"
+                      dataType="wstr"
+                      length="29"
+                      name="your-lastName" />
+                    <externalMetadataColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-celular]"
+                      codePage="65001"
+                      dataType="str"
+                      length="20"
+                      name="your-celular" />
+                    <externalMetadataColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_time;;;;;;;; ]"
+                      dataType="dbDate"
+                      name="submit_time;;;;;;;; " />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\CSV INVESTIGADOR.Paths[Derived Column Output]"
+              endId="Package\CSV INVESTIGADOR\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Derived Column Output"
+              startId="Package\CSV INVESTIGADOR\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\CSV INVESTIGADOR.Paths[Flat File Source Output]"
+              endId="Package\CSV INVESTIGADOR\Derived Column 1.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\CSV INVESTIGADOR\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\CSV TUTOR"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4b508bdf-c2e1-4546-97f6-f40f9ef50949}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CSV TUTOR"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\CSV TUTOR\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\CSV TUTOR\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CSV TUTOR\Derived Column.Inputs[Derived Column Input].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="60"
+                      cachedName="nombre"
+                      lineageId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CSV TUTOR\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\CSV TUTOR\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV TUTOR\Derived Column.Outputs[Derived Column Output].Columns[code]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="9"
+                      lineageId="Package\CSV TUTOR\Derived Column.Outputs[Derived Column Output].Columns[code]"
+                      name="code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[UPPER]([SUBSTRING](#{Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]},1,2)) + "-" + [RIGHT]("0" + (DT_STR,2,65001)[DATEPART]("dd",[GETDATE]()),2) + [RIGHT]("0" + (DT_STR,2,65001)[DATEPART]("mm",[GETDATE]()),2) + [RIGHT]((DT_STR,4,65001)[DATEPART]("yy",[GETDATE]()),2)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">UPPER(SUBSTRING(nombre,1,2)) + "-" + RIGHT("0" + (DT_STR,2,65001)DATEPART("dd",GETDATE()),2) + RIGHT("0" + (DT_STR,2,65001)DATEPART("mm",GETDATE()),2) + RIGHT((DT_STR,4,65001)DATEPART("yy",GETDATE()),2)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CSV TUTOR\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\CSV TUTOR\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV TUTOR\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CSV TUTOR\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CSV TUTOR\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CSV TUTOR\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CSV TUTOR\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="22538"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CSV TUTOR\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[NewTutorCSV]"
+                  connectionManagerRefId="Package.ConnectionManagers[NewTutorCSV]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CSV TUTOR\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CSV TUTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[fechaRegistro]"
+                      cachedDataType="dbDate"
+                      cachedName="fechaRegistro"
+                      externalMetadataColumnId="Package\CSV TUTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[fechaRegistro]"
+                      lineageId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].Columns[fechaRegistro]" />
+                    <inputColumn
+                      refId="Package\CSV TUTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="60"
+                      cachedName="nombre"
+                      externalMetadataColumnId="Package\CSV TUTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[nombre]"
+                      lineageId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]" />
+                    <inputColumn
+                      refId="Package\CSV TUTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[correo]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="correo"
+                      externalMetadataColumnId="Package\CSV TUTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[correo]"
+                      lineageId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].Columns[correo]" />
+                    <inputColumn
+                      refId="Package\CSV TUTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[code]"
+                      cachedDataType="wstr"
+                      cachedLength="9"
+                      cachedName="code"
+                      externalMetadataColumnId="Package\CSV TUTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[code]"
+                      lineageId="Package\CSV TUTOR\Derived Column.Outputs[Derived Column Output].Columns[code]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CSV TUTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[nombre]"
+                      dataType="wstr"
+                      length="60"
+                      name="nombre" />
+                    <externalMetadataColumn
+                      refId="Package\CSV TUTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[correo]"
+                      dataType="wstr"
+                      length="30"
+                      name="correo" />
+                    <externalMetadataColumn
+                      refId="Package\CSV TUTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[code]"
+                      dataType="wstr"
+                      length="9"
+                      name="code" />
+                    <externalMetadataColumn
+                      refId="Package\CSV TUTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[fechaRegistro]"
+                      dataType="dbDate"
+                      name="fechaRegistro" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\CSV TUTOR\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="22538"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CSV TUTOR\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[TutorCSV]"
+                  connectionManagerRefId="Package.ConnectionManagers[TutorCSV]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].Columns[correo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-email]"
+                      length="30"
+                      lineageId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].Columns[correo]"
+                      name="correo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].Columns[ip]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_ip]"
+                      length="50"
+                      lineageId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].Columns[ip]"
+                      name="ip"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].Columns[fechaRegistro]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_time]"
+                      lineageId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].Columns[fechaRegistro]"
+                      name="fechaRegistro"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-firstName]"
+                      length="60"
+                      lineageId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]"
+                      name="nombre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-firstName]"
+                      dataType="wstr"
+                      length="60"
+                      name="your-firstName" />
+                    <externalMetadataColumn
+                      refId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-email]"
+                      dataType="wstr"
+                      length="30"
+                      name="your-email" />
+                    <externalMetadataColumn
+                      refId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_ip]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="submit_ip" />
+                    <externalMetadataColumn
+                      refId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_time]"
+                      dataType="dbDate"
+                      name="submit_time" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\CSV TUTOR.Paths[Derived Column Output]"
+              endId="Package\CSV TUTOR\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Derived Column Output"
+              startId="Package\CSV TUTOR\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\CSV TUTOR.Paths[Flat File Source Output]"
+              endId="Package\CSV TUTOR\Derived Column.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\CSV TUTOR\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\CSV VOLUNTARIO"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{19983845-3443-4b47-8390-2685e6a91124}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CSV VOLUNTARIO"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\CSV VOLUNTARIO\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\CSV VOLUNTARIO\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CSV VOLUNTARIO\Derived Column.Inputs[Derived Column Input].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="60"
+                      cachedName="nombre"
+                      lineageId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CSV VOLUNTARIO\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\CSV VOLUNTARIO\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV VOLUNTARIO\Derived Column.Outputs[Derived Column Output].Columns[code]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="9"
+                      lineageId="Package\CSV VOLUNTARIO\Derived Column.Outputs[Derived Column Output].Columns[code]"
+                      name="code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[UPPER]([SUBSTRING](#{Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]},1,2)) + "-" + [RIGHT]("0" + (DT_STR,2,65001)[DATEPART]("dd",[GETDATE]()),2) + [RIGHT]("0" + (DT_STR,2,65001)[DATEPART]("mm",[GETDATE]()),2) + [RIGHT]((DT_STR,4,65001)[DATEPART]("yy",[GETDATE]()),2)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">UPPER(SUBSTRING(nombre,1,2)) + "-" + RIGHT("0" + (DT_STR,2,65001)DATEPART("dd",GETDATE()),2) + RIGHT("0" + (DT_STR,2,65001)DATEPART("mm",GETDATE()),2) + RIGHT((DT_STR,4,65001)DATEPART("yy",GETDATE()),2)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CSV VOLUNTARIO\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\CSV VOLUNTARIO\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV VOLUNTARIO\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CSV VOLUNTARIO\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CSV VOLUNTARIO\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CSV VOLUNTARIO\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CSV VOLUNTARIO\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="22538"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CSV VOLUNTARIO\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[NewVoluntarioCSV]"
+                  connectionManagerRefId="Package.ConnectionManagers[NewVoluntarioCSV]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="60"
+                      cachedName="nombre"
+                      externalMetadataColumnId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[nombre]"
+                      lineageId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]" />
+                    <inputColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].Columns[correo]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="correo"
+                      externalMetadataColumnId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[correo]"
+                      lineageId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[correo]" />
+                    <inputColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].Columns[code]"
+                      cachedDataType="wstr"
+                      cachedLength="9"
+                      cachedName="code"
+                      externalMetadataColumnId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[code]"
+                      lineageId="Package\CSV VOLUNTARIO\Derived Column.Outputs[Derived Column Output].Columns[code]" />
+                    <inputColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].Columns[sobreMi]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="sobreMi"
+                      externalMetadataColumnId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[sobreMi]"
+                      lineageId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[sobreMi]" />
+                    <inputColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].Columns[fechaRegistro]"
+                      cachedDataType="dbDate"
+                      cachedName="fechaRegistro"
+                      externalMetadataColumnId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[fechaRegistro]"
+                      lineageId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[fechaRegistro]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[nombre]"
+                      dataType="wstr"
+                      length="60"
+                      name="nombre" />
+                    <externalMetadataColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[correo]"
+                      dataType="wstr"
+                      length="30"
+                      name="correo" />
+                    <externalMetadataColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[fechaRegistro]"
+                      dataType="dbDate"
+                      name="fechaRegistro" />
+                    <externalMetadataColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[sobreMi]"
+                      dataType="wstr"
+                      length="200"
+                      name="sobreMi" />
+                    <externalMetadataColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[code]"
+                      dataType="wstr"
+                      length="10"
+                      name="code" />
+                    <externalMetadataColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[cv]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="cv" />
+                    <externalMetadataColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[submit_ip]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="submit_ip" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\CSV VOLUNTARIO\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="22538"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CSV VOLUNTARIO\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[VoluntarioCSV]"
+                  connectionManagerRefId="Package.ConnectionManagers[VoluntarioCSV]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[correo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-email]"
+                      length="30"
+                      lineageId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[correo]"
+                      name="correo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[fechaRegistro]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_time]"
+                      lineageId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[fechaRegistro]"
+                      name="fechaRegistro"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-name]"
+                      length="60"
+                      lineageId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[nombre]"
+                      name="nombre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[sobreMi]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[about]"
+                      length="200"
+                      lineageId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[sobreMi]"
+                      name="sobreMi"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[cv]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cv]"
+                      length="50"
+                      lineageId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[cv]"
+                      name="cv"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[submit_ip]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_ip]"
+                      length="50"
+                      lineageId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].Columns[submit_ip]"
+                      name="submit_ip"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-email]"
+                      dataType="wstr"
+                      length="30"
+                      name="your-email" />
+                    <externalMetadataColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_time]"
+                      dataType="dbDate"
+                      name="submit_time" />
+                    <externalMetadataColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[your-name]"
+                      dataType="wstr"
+                      length="60"
+                      name="your-name" />
+                    <externalMetadataColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[about]"
+                      dataType="wstr"
+                      length="200"
+                      name="about" />
+                    <externalMetadataColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cv]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="cv" />
+                    <externalMetadataColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[submit_ip]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="submit_ip" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\CSV VOLUNTARIO.Paths[Derived Column Output]"
+              endId="Package\CSV VOLUNTARIO\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Derived Column Output"
+              startId="Package\CSV VOLUNTARIO\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\CSV VOLUNTARIO.Paths[Flat File Source Output]"
+              endId="Package\CSV VOLUNTARIO\Derived Column.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\CSV VOLUNTARIO\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="139.2,41.6"
+          Id="Package\CSV ASESOR"
+          TopLeft="703.750011984791,388.641179071331" />
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\CSV INVESTIGADOR"
+          TopLeft="253.750004321337,392.655885009989" />
+        <NodeLayout
+          Size="134.4,41.6"
+          Id="Package\CSV TUTOR"
+          TopLeft="67.142858286293,393.058829041914" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\CSV VOLUNTARIO"
+          TopLeft="495.357151293024,393.335298209125" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\CSV ASESOR">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\CSV ASESOR\Flat File Destination"
+          TopLeft="282,273" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\CSV ASESOR\Flat File Source"
+          TopLeft="290,31.6" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\CSV ASESOR\Derived Column 1"
+          TopLeft="290,140.6" />
+        <EdgeLayout
+          Id="Package\CSV ASESOR.Paths[Flat File Source Output]"
+          TopLeft="365.8,73.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,67.4"
+              Start="0,0"
+              End="0,59.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CSV ASESOR.Paths[Derived Column Output]"
+          TopLeft="367,182.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,90.8"
+              Start="0,0"
+              End="0,83.3">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,83.3" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\CSV INVESTIGADOR">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\CSV INVESTIGADOR\Derived Column 1"
+          TopLeft="290,143.6" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\CSV INVESTIGADOR\Flat File Destination"
+          TopLeft="281,269" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\CSV INVESTIGADOR\Flat File Source"
+          TopLeft="290,31.6" />
+        <EdgeLayout
+          Id="Package\CSV INVESTIGADOR.Paths[Flat File Source Output]"
+          TopLeft="365.8,73.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,70.4"
+              Start="0,0"
+              End="0,62.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CSV INVESTIGADOR.Paths[Derived Column Output]"
+          TopLeft="366.5,185.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,83.8"
+              Start="0,0"
+              End="0,76.3">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,76.3" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\CSV TUTOR">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\CSV TUTOR\Flat File Destination"
+          TopLeft="280.28571427355,308.705882867727" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\CSV TUTOR\Flat File Source"
+          TopLeft="290,31.6" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\CSV TUTOR\Derived Column"
+          TopLeft="286,153" />
+        <EdgeLayout
+          Id="Package\CSV TUTOR.Paths[Flat File Source Output]"
+          TopLeft="363.8,73.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,79.8000000000001"
+              Start="0,0"
+              End="0,72.3000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,72.3000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CSV TUTOR.Paths[Derived Column Output]"
+          TopLeft="364.142857136775,194.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,114.105882867727"
+              Start="0,0"
+              End="0,106.605882867727">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,106.605882867727" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\CSV VOLUNTARIO">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\CSV VOLUNTARIO\Flat File Destination"
+          TopLeft="285,329" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\CSV VOLUNTARIO\Flat File Source"
+          TopLeft="292,39.6" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\CSV VOLUNTARIO\Derived Column"
+          TopLeft="291,175.6" />
+        <EdgeLayout
+          Id="Package\CSV VOLUNTARIO.Paths[Flat File Source Output]"
+          TopLeft="367.3,81.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,94.4"
+              Start="0,0"
+              End="0,86.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,86.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CSV VOLUNTARIO.Paths[Derived Column Output]"
+          TopLeft="369,217.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,111.8"
+              Start="0,0"
+              End="0,104.3">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,104.3" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
